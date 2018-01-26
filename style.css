@@ -1,0 +1,26 @@
+table , td, th, div {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+td, th {
+  height: 25px;
+}
+
+table , td, th, button, div{
+  margin: 2rem;
+}
+
+.inline {
+  display: inline-block;
+}
+
+input {
+  margin: .3rem;
+}
+
+svg {
+  width: 0.001%;
+  height: 0.001%;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>イロレーティング</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <form id="plus" onchange="radio_rendou()">
+    <div class="inline" id="A">
+      <label for="">A</label><br>
+      <input type="radio" name="battleA" value="winA">勝ち<br>
+      <input type="radio" name="battleA" value="loseA">負け<br>
+      <input type="radio" name="battleA" value="drawA">引き分け<br>
+    </div>
+    <div class="inline" id="B">
+      <label for="">B</label><br>
+      <input type="radio" name="battleB" value="winB">勝ち<br>
+      <input type="radio" name="battleB" value="loseB">負け<br>
+      <input type="radio" name="battleB" value="drawB ">引き分け<br>
+    </div>
+    <div class="inline">
+      <input type="button" value="計算する" onclick="calculation()"><br>
+      <input type="button" value="リセットする" onclick="reset()">
+    </div>
+    <div class="inline" id="graph">
+    </div>
+  </form>
+
+<table id="result">
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>B</td>
+      <td>Aの合計勝ち数</td>
+      <td>Bの合計勝ち数</td>
+      <td>RA</td>
+      <td>RB</td>
+      <td>EA</td>
+      <td>EB</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>1500.00</td>
+        <td>1500.00</td>
+        <td>1.00</td>
+        <td>1.00</td>
+    </tr>
+  </tbody>
+</table>
+  <script src="http://d3js.org/d3.v3.js"></script>
+  <script type="text/javascript" src="elo.js"></script>
+</body>
+</html>
